@@ -1,0 +1,97 @@
+@import "_variables";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: $Very-Dark-Blue;
+    font-family: $Font-family;
+    font-size: 15px;
+    color: $White;
+}
+main {
+    max-width: 290px;
+    margin: 150px auto;
+    // background-color: $Dark-Blue;
+    background-image: linear-gradient(rgba(38, 47, 55, 0.7), rgba(38, 47, 55, 0.3));
+    border-radius: 10px;
+    padding: 30px;
+    img {
+        background-color: $bg-buttons;
+        border-radius: 50%;
+        padding: 10px;
+    }
+    h1 {
+        margin: 20px auto;
+    }
+    p {
+        line-height: 20px;
+        color: $Medium-Grey;
+    }
+}
+
+.btn-active {
+    background-color: $Light-Grey;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px 20px;
+  }
+section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    .number-btns {
+        background-color: $bg-buttons;
+        color: $Light-Grey;
+        border: none;
+        border-radius: 50%;
+        padding: 15px 20px;
+    }
+    .number-btns:hover {
+        background-color: $Orange;
+        color: $White;      
+    }
+    
+}
+
+#submit-btn {
+    button {
+        display: block;
+        width: 100%;
+        color: $White;
+        background-color: $Orange;
+        padding: 15px;
+        border: none;
+        border-radius: 20px;
+        margin-top: 25px;
+    }
+    button:hover {
+        background-color: $White;
+        color: $Orange;
+    }
+}
+#modal {
+   display: none;
+   @extend main;
+   overflow: auto;
+//    background-color: $Dark-Blue;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   left: 36%;
+   width: 100%;
+   height: auto;
+}
+.modal-content {
+    text-align: center;
+}
+#number-selected {
+    background-color: $bg-buttons;
+    padding: 13px;
+    color: $Orange;
+    margin: 30px auto;
+    border-radius: 20px;
+    width: fit-content;
+}

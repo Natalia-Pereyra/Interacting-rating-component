@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #121417;
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  color: white;
+}
+
+main, #modal {
+  max-width: 290px;
+  margin: 150px auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(38, 47, 55, 0.7)), to(rgba(38, 47, 55, 0.3)));
+  background-image: linear-gradient(rgba(38, 47, 55, 0.7), rgba(38, 47, 55, 0.3));
+  border-radius: 10px;
+  padding: 30px;
+}
+
+main img, #modal img {
+  background-color: #303b45;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+main h1, #modal h1 {
+  margin: 20px auto;
+}
+
+main p, #modal p {
+  line-height: 20px;
+  color: #7c8798;
+}
+
+.btn-active {
+  background-color: #959eac;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 15px 20px;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px auto;
+}
+
+section .number-btns {
+  background-color: #303b45;
+  color: #959eac;
+  border: none;
+  border-radius: 50%;
+  padding: 15px 20px;
+}
+
+section .number-btns:hover {
+  background-color: #fb7413;
+  color: white;
+}
+
+#submit-btn button {
+  display: block;
+  width: 100%;
+  color: white;
+  background-color: #fb7413;
+  padding: 15px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 25px;
+}
+
+#submit-btn button:hover {
+  background-color: white;
+  color: #fb7413;
+}
+
+#modal {
+  display: none;
+  overflow: auto;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 36%;
+  width: 100%;
+  height: auto;
+}
+
+.modal-content {
+  text-align: center;
+}
+
+#number-selected {
+  background-color: #303b45;
+  padding: 13px;
+  color: #fb7413;
+  margin: 30px auto;
+  border-radius: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+/*# sourceMappingURL=style.css.map */
